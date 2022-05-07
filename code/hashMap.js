@@ -12,11 +12,11 @@ class HashTable {
     }
 
     set(key,value) {
-        this.data[this._hash(key)] = value
+      this.data[this._hash(key)] = value;
     }
 
     get(key) {
-        return this.data[this._hash(key)]
+      return this.data[this._hash(key)]
     }
   }
   
