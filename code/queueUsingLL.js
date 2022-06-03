@@ -27,6 +27,7 @@ class Queue {
 
     dequeue() {
         if(this.length === 0) return "Queue is Empty";
+        if(this.front == this.rear) this.rear = null;
         const dequeueNode = this.front;
         this.front = this.front.next;
         this.length--;
